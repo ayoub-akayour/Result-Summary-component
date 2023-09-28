@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  font-family: Hanken Grotesk;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px; /* Set a max-width for the container */
+  width: 100%; /* Make the container responsive */
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 15px hsl(221, 100%, 96%);
+  flex-wrap: wrap;
+  border-radius: 35px;
+}
+
+.your-result {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 35px;
+  flex: 1; /* Use flex to distribute width equally between divs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 0;
+  color: white;
+  gap: 30px;
+  min-width: 300px;
+}
+
+.circle {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.score {
+  font-size: 5rem;
+}
+
+.response {
+  font-size: 2.5rem;
+  font-style: bolder;
+}
+
+.comment {
+  max-width: 400px;
+  text-align: center;
+}
+
+.summary {
+  flex: 1; /* Use flex to distribute width equally between divs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  min-width: 300px;
+}
+
+li {
+  list-style: none;
+  max-width: 100%; /* Make each list item take up the full width */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem;
+  border-radius: 10px;
+  height: 50px;
+}
+
+ul {
+  width: 100%;
+  padding: 0 2.5rem 0;
+}
+
+li div {
+  display: flex;
+  padding: 7px;
+  margin-left: 5px;
+}
+
+div p {
+  margin-left: 12px;
+}
+
+li span {
+  padding: 7px;
+}
+
+#reaction {
+  color: rgb(255, 87, 87);
+  background-color: rgb(255, 246, 245);
+}
+
+#memory {
+  color: rgb(255, 176, 31);
+  background-color: rgb(255, 251, 242);
+}
+
+#verbal {
+  color: rgb(0, 189, 145);
+  background-color: rgb(242, 251, 250);
+}
+
+#visual {
+  color: rgb(17, 37, 212);
+  background-color: rgb(243, 243, 250);
+}
+
+#submit {
+  border: none;
+  font-size: large;
+  background-color: hsl(223.9deg 29.93% 26.86%);
+  color: hsl(0, 0%, 100%);
+  margin: 2rem 0;
+  width: calc(
+    100% - 8.5rem
+  ); /* Set the width to 100% to match the parent's width */
+  padding: 0.75rem 1rem; /* Adjust padding as needed for desired button size */
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background ease-in 0.3s;
+}
+
+#submit:hover {
+  background-color: hsl(241, 81%, 54%);
+}
